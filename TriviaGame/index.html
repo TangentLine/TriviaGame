@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Triva Game</title>
+	<!-- CSS Files -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<header id="masthead">
+		<div class="container">
+			<h1>The Game</h1>
+		</div>
+	</header>
+	<div id="main-container" class="container">
+		<section class="main-section">
+			<h1 class="rules">The Rules</h1>
+			<p class="rules">There are 3 questions, you have 30 seconds to answer all 3 questions.</p>
+			<h2>
+				<button type="button" id="start-button">Start</button>
+			</h2>
+			<!-- timer will be displayed in div#show-number-->
+			<div id="show-number"></div>
+			<!-- question 1 -->
+			<p class="question">1. Which is the correct boolean value?</p>
+			<ul class="answers">
+			<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">1</label><br/>
+			<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Negative</label><br/>
+			<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">True</label><br/>
+			<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">Mars</label><br/>
+			</ul>
+			<!-- question 2 -->
+			<p class="question">2. What does the A in RGBA mean?</p>
+			<ul class="answers">
+			<input type="radio" name="q2" value="a" id="q2a"><label for="q2a">apple</label><br/>
+			<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">alpha</label><br/>
+			<input type="radio" name="q2" value="c" id="q2c"><label for="q2c">Acura</label><br/>
+			<input type="radio" name="q2" value="d" id="q2d"><label for="q2d">Abomination</label><br/>
+			</ul>
+			<!-- question 3 -->
+			<p class="question">3. What is the range of Hue?</p>
+			<ul class="answers">
+			<input type="radio" name="q3" value="a" id="q3a"><label for="q3a">270</label><br/>
+			<input type="radio" name="q3" value="b" id="q3b"><label for="q3b">360</label><br/>
+			<input type="radio" name="q3" value="c" id="q3c"><label for="q3c">120</label><br/>
+			<input type="radio" name="q3" value="d" id="q3d"><label for="q3d">-1</label><br/>
+			</ul>
+			
+			<ul class="answers">
+			<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">True</label><br/>
+			<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">alpha</label><br/>
+			<input type="radio" name="q3" value="b" id="q3b"><label for="q3b">360</label><br/>
+			</ul>
+			<!-- Hidden Buttons and Elements -->
+			<!-- Submit Button -->
+			<button type="button" id="submit">Submit Final Answers</button>
+			<!-- Results -->
+			<div id="results">
+			Show me the answers!
+				<!-- <div id="category1">
+				<p><strong>Question 1:</strong> The correct answer is the <strong>Answer 1</strong>.</p>
+				</div> -->
+			</div>
+			<button type="button" id="restart">Play Again</button>
+		</section>
+	</div>
+	
+	<!-- JavaScript File & jQuery Lib -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+	<script type="text/javascript" src="assets/javascript/displayed.js"></script>
+</body>
+</html>
